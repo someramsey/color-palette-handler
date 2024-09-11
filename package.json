@@ -1,8 +1,12 @@
 {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "pallette",
     "main": "./dist/cjs/index.js",
     "module": "./dist/mjs/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/someramsey/Mini-Typesafe-Color-Palette-Handler"
+    },
     "license": "ISC",
     "scripts": {
         "build:mjs": "tsc -p tsconfig.mjs.json",
