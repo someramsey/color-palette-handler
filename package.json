@@ -1,5 +1,6 @@
 {
-    "version": "1.0.0",
+    "version": "0.0.1",
+    "name": "pallette",
     "main": "./dist/cjs/index.js",
     "module": "./dist/mjs/index.js",
     "license": "ISC",
@@ -21,5 +22,13 @@
         },
         "./mjs/": "./dist/mjs/",
         "./cjs/": "./dist/cjs/"
-    }
+    },
+    "keywords": [
+        "palette",
+        "color palette",
+        "color management",
+        "color",
+        "theme",
+        "theming"
+    ]
 }
