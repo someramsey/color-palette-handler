@@ -1,0 +1,25 @@
+{
+    "version": "1.0.0",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/mjs/index.js",
+    "license": "ISC",
+    "scripts": {
+        "build:mjs": "tsc -p tsconfig.mjs.json",
+        "build:cjs": "tsc -p tsconfig.cjs.json",
+        "build:decl": "tsc -p tsconfig.json",
+        "build": "npm run build:mjs & npm run build:cjs & npm run build:decl"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.25.6",
+        "@babel/core": "^7.25.2",
+        "@babel/preset-env": "^7.25.4"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/mjs/index.js",
+            "require": "./dist/cjs/index.js"
+        },
+        "./mjs/": "./dist/mjs/",
+        "./cjs/": "./dist/cjs/"
+    }
+}
